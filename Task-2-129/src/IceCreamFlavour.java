@@ -1,4 +1,3 @@
-abstract class IceCreamFlavour {
-    abstract double getPricePerScoop();
+public interface IceCreamFlavour {
+    double getPricePerScoop();
 }
-
