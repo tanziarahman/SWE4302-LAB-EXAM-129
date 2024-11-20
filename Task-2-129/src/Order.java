@@ -14,4 +14,26 @@ public class Order {
     public void chooseWaffleCone(boolean isWaffleCone) {
         this.isWaffleCone = isWaffleCone;
     }
+    public double calculateSubtotal() {
+        double subtotal = 0.0;
+        for (IceCreamFlavour flavor : flavors) {
+            subtotal += flavor.getPricePerScoop();
+        }
+        for (Map.Entry<IceCreamTopping, Integer> entry : toppings.entrySet()) {
+            subtotal += entry.getKey().getPrice() * entry.getValue();
+        }
+        if (isWaffleCone) {
+            subtotal += WAFFLE_CONE_PRICE;
+        }
+        return subtotal;
+    }
+    public double calculateTax() {
+        return calculateSubtotal() * TAX_RATE;
+    }
+    public double calculateTotal() {
+        return calculateSubtotal() + calculateTax();
+    }
+    public boolean isWaffleCone() {
+        return isWaffleCone;
+    }
 }
