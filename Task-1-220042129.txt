@@ -1,0 +1,18 @@
+In class GlobalInventoryData:
+1. line 12-13, static keyword used
+2. In line 17, there is primitive obessision
+
+In class InventorySystem:
+1. the class is a long class
+2. line 41-42, long parameter list,7 parameters
+3. line 41-73, long method
+4. line 74-103, long method
+5. line 132-155, long method
+6. line 80,85,87,91,93, primitive obsession
+7. In line 78-98, switch case been used
+8. In line 185-197, long method
+9. In line 11-19, long attribute list
+
+In class WareHouse:
+1. In line 8, there is poor naming, i
+
